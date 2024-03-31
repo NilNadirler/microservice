@@ -18,6 +18,9 @@ spring:
 
 server:
   port: 8889
+  
+  zipkin:
+    base-url: http://localhost:9411
 
 eureka:
   client:
@@ -26,3 +29,12 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     prefer-ip-address: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: info  
+    

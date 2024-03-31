@@ -69,6 +69,7 @@ public class Book {
 		bookDto.setAuthor(author);
 		bookDto.setIsbn(isbn);
 		bookDto.setTitle(title);
+		bookDto.setPressName(pressName);
 		
 		return bookDto;
 	}
