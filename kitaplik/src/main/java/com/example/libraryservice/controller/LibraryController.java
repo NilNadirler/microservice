@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,6 +36,9 @@ public class LibraryController {
 		this.environment = environment;
 	}
 	
+	@Value("${library.service.count}")
+	private String count;
+	
 	@GetMapping("{id}")
 	public ResponseEntity<LibraryDto> getLibraryById(@PathVariable String id){
 		return ResponseEntity.ok(libraryService.getAllBooksInLibraryById(id));
@@ -56,6 +60,11 @@ public class LibraryController {
 	@GetMapping
 	public ResponseEntity<List<String>> getAllLibraries(){
 		return ResponseEntity.ok(libraryService.getAllLibraries());
+	}
+	
+	@GetMapping
+	public ResponseEntity<String> getCount(){
+		return ResponseEntity.ok("Library count is " +count);
 	}
 	
 
