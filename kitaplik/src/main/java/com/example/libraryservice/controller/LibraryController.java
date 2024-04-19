@@ -29,6 +29,9 @@ public class LibraryController {
 	private final LibraryService libraryService;
 	
 	private final Environment environment;
+	
+	@Value("${library-service.count}")
+	private String count;
 
 	public LibraryController(LibraryService libraryService, Environment environment) {
 		super();
@@ -36,8 +39,8 @@ public class LibraryController {
 		this.environment = environment;
 	}
 	
-	@Value("${library.service.count}")
-	private String count;
+
+	
 	
 	@GetMapping("{id}")
 	public ResponseEntity<LibraryDto> getLibraryById(@PathVariable String id){
@@ -62,7 +65,7 @@ public class LibraryController {
 		return ResponseEntity.ok(libraryService.getAllLibraries());
 	}
 	
-	@GetMapping
+	@GetMapping("/count")
 	public ResponseEntity<String> getCount(){
 		return ResponseEntity.ok("Library count is " +count);
 	}
