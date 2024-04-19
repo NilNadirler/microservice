@@ -7,10 +7,10 @@ INDEX VERSION 1.134+C:\Users\DELL\OneDrive\Masaüstü\micro\microservice\.metadata
 567835841.index
 3937028556.index
 1577626470.index
-2860848169.index
-1692044692.index
-2585460589.index
 1275913544.index
+2860848169.index
+2585460589.index
+1692044692.index
 4152080389.index
 3287974424.index
 3041835987.index
@@ -132,6 +132,7 @@ INDEX VERSION 1.134+C:\Users\DELL\OneDrive\Masaüstü\micro\microservice\.metadata
 4132508595.index
 2797480064.index
 2573146915.index
+2441935067.index
 2366716130.index
 4131394457.index
 2551543654.index
@@ -178,8 +179,8 @@ INDEX VERSION 1.134+C:\Users\DELL\OneDrive\Masaüstü\micro\microservice\.metadata
 2671986561.index
 1622689175.index
 2180445613.index
-845451488.index
 2308611600.index
+845451488.index
 195196831.index
 68274703.index
 1470891063.index
@@ -211,8 +212,8 @@ INDEX VERSION 1.134+C:\Users\DELL\OneDrive\Masaüstü\micro\microservice\.metadata
 536874296.index
 759137955.index
 2035957009.index
-3247357229.index
 2769400588.index
+3247357229.index
 993748669.index
 3359380079.index
 1238337524.index
